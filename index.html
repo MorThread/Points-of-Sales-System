@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Helvetica';
+        background-color: #313131;
+      }
+
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-size: 50px;
+        font-style: italic;
+        font-weight: bold;
+        color: orange;
+    }
+
+    h2 {
+        font-family: Arial, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: bold;
+        color: orange;
+    }
+
+    li {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bold;
+        color: orange;
+    }
+
+    div {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bold;
+        color: orange;
+    }
+
+
+</style>
+<title>Canteen</title>
+</head>
+<body>
+    <h1>Welcome to the canteen! Here are our street foods menu.</h1>
+    <h2>Prices are show below. Click Finalize order button once you're sure with your orders.</h2>
+    <div class="street foods">
+        <ul>
+            <li>Burgers - ₱60</li>
+            <li>Fries - ₱50</li>
+            <li>Fishball - ₱20</li>
+            <li>Kikiam - ₱20</li>
+        </ul>
+        <button type="button" onclick="addFoodItem()">Add a food item</button>
+
+        <div class="choices">
+            <form>
+                <label for="street-foods">Choice</label>
+                <select name="street-foods" id="street-foods">
+                    <option value="burger">Burger</option>
+                    <option value="fries">Fries</option>
+                    <option value="fishball">Fishball</option>
+                    <option value="kikiam">Kikiam</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="quantity">
+            <label for="choices">Quantity</label>
+            <input type="text" id="quantity" name="quantity">
+        </div>
+
+        <div class="pay">
+            <form id="paymentForm">
+                <input type="text" id="cash" name="cash" placeholder="Enter cash amount">
+                <input type="submit" value="Pay">
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
